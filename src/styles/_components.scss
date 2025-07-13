@@ -1,0 +1,81 @@
+// Component specific styles
+.container {
+	width: 100%;
+	max-width: 640px;
+	margin: 1rem auto;
+	box-sizing: border-box;
+	position: relative;
+}
+
+// Button styles
+button {
+	border: 1px solid var(--c-border);
+	border-radius: var(--rad);
+	padding: 0.5rem 1rem;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: var(--c-dim-bg);
+	color: var(--c-fg);
+	font-family: var(--ff-default);
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--c-bg);
+	}
+}
+
+button:has(> svg) {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.btn-small {
+	font-size: 0.875rem !important;
+	padding: 0.25rem 0.5rem !important;
+}
+
+// Button variants
+.btn-success {
+	background-color: var(--c-success);
+	border-color: var(--c-success);
+
+	&:hover {
+		background-color: color-mix(in srgb, var(--c-success) 85%, black);
+		border-color: color-mix(in srgb, var(--c-success) 85%, black);
+	}
+}
+
+.btn-danger {
+	background-color: var(--c-danger);
+	border-color: var(--c-danger);
+
+	&:hover {
+		background-color: color-mix(in srgb, var(--c-danger) 85%, black);
+		border-color: color-mix(in srgb, var(--c-danger) 85%, black);
+	}
+}
+
+// Input styles
+input[type='text'],
+select {
+	border: 1px solid var(--c-border);
+	border-radius: var(--rad);
+	padding: 0.25rem 0.375rem;
+	font-size: 1em;
+	font-family: var(--ff-default);
+	color: var(--c-fg);
+	background-color: var(--c-bg);
+}
+
+input[type='text'].description-input {
+	font-size: 1em;
+	font-weight: 500;
+	background: transparent;
+	padding: 0.33rem 0.67rem;
+	color: var(--c-fg);
+
+	&::placeholder {
+		color: var(--c-placeholder);
+	}
+}

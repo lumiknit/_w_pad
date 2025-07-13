@@ -1,0 +1,85 @@
+// Editor specific styles
+.ed {
+	border-radius: var(--rad);
+	border: 1px solid var(--c-border);
+	overflow: hidden;
+	margin-bottom: 2rem;
+
+	& > :not(:last-child) {
+		border-bottom: 1px solid var(--c-border);
+	}
+}
+
+.e-hd,
+.e-ft {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	padding: 0.25rem 0.375rem;
+	background-color: var(--c-dim-bg);
+	font-size: 0.875rem;
+
+	& > div {
+		display: flex;
+		gap: 0.125rem;
+		align-items: center;
+	}
+}
+
+// Output styles
+.e-outputs {
+	padding: 0.5rem;
+	background-color: var(--c-dim-bg);
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.e-output-line {
+	font-family: var(--ff-mono);
+	font-size: 0.875rem;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0.125rem 0;
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.e-output-normal {
+	color: var(--c-fg);
+}
+
+.e-output-error {
+	color: var(--c-error);
+}
+
+.e-outputs-content.loading {
+	opacity: 0.5;
+}
+
+// Spinner styles
+.e-spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+.e-spinner-circle {
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--c-border);
+	border-top: 2px solid var(--c-fg);
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

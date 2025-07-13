@@ -1,0 +1,66 @@
+// NavBar styles
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: var(--c-dim-bg);
+	border-bottom: 1px solid var(--c-border);
+	padding: 0.5rem 0;
+}
+
+.navbar-content {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+
+.navbar-brand h1 {
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--c-fg);
+}
+
+.navbar-actions {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.navbar-btn {
+	background-color: transparent;
+	border: 1px solid var(--c-border);
+	color: var(--c-fg);
+	padding: 0.25rem 0.75rem;
+	border-radius: var(--rad);
+	font-size: 0.875rem;
+	cursor: pointer;
+	transition: background-color 0.2s;
+
+	&:hover {
+		background-color: var(--c-border);
+	}
+}
+
+// App actions layout
+.app-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.app-actions-left {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.app-actions-right {
+	display: flex;
+	gap: 0.5rem;
+}

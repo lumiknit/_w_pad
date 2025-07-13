@@ -1,0 +1,73 @@
+// Common utility classes
+.flex {
+	display: flex;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.flex-shrink-0 {
+	flex-shrink: 0;
+}
+
+.gap-sm {
+	gap: 0.25rem;
+}
+
+.gap-md {
+	gap: 0.5rem;
+}
+
+.gap-lg {
+	gap: 0.75rem;
+}
+
+.border-base {
+	border: 1px solid var(--c-border);
+	border-radius: var(--rad);
+}
+
+.bg-dim {
+	background-color: var(--c-dim-bg);
+}
+
+.text-sm {
+	font-size: 0.875rem;
+}
+
+.text-placeholder {
+	color: var(--c-placeholder);
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.transition-base {
+	transition: all 0.2s ease;
+}
+
+.is-mono {
+	font-family: var(--ff-mono) !important;
+}

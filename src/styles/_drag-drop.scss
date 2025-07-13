@@ -1,0 +1,25 @@
+// Drag and drop styles
+.drag-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 3000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.drag-message {
+	background-color: var(--c-bg);
+	color: var(--c-fg);
+	padding: 2rem 3rem;
+	border-radius: var(--rad);
+	font-size: 1.25rem;
+	font-weight: 600;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+	border: 1px solid white;
+}

@@ -1,0 +1,80 @@
+// Form and input specific styles
+
+// Pad header styles
+.pad-header {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+.saved-at {
+	font-size: 0.875rem;
+	color: var(--c-placeholder);
+	margin-top: 0.25rem;
+}
+
+// Switch styles
+div.switch {
+	background-color: var(--c-bg);
+	border-radius: var(--rad);
+}
+
+button.switch-item {
+	background-color: transparent;
+	border: none;
+	padding: 0.25rem 0.75rem;
+
+	&.active {
+		border: 1px solid var(--c-border);
+		background-color: var(--c-dim-bg);
+	}
+}
+
+// Common checkbox styles
+.checkbox-custom {
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	border: 2px solid var(--c-border);
+	border-radius: 3px;
+	margin: 0;
+	cursor: pointer;
+	position: relative;
+	background-color: var(--c-bg);
+	transition: all 0.2s ease;
+
+	&:hover {
+		border-color: var(--c-success);
+	}
+
+	&:checked {
+		background-color: var(--c-success);
+		border-color: var(--c-success);
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 4px;
+			top: 1px;
+			width: 6px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg) translate(-28%, -8%);
+		}
+	}
+
+	&:focus {
+		outline: 2px solid var(--c-success);
+		outline-offset: 2px;
+	}
+}
+
+.checkbox-label {
+	@extend .flex-center, .gap-md, .text-sm, .cursor-pointer;
+	color: var(--c-fg);
+
+	input[type='checkbox'] {
+		@extend .checkbox-custom;
+	}
+}

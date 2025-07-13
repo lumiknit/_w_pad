@@ -1,0 +1,42 @@
+// Pad management styles
+.pads-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.pad-item {
+	@extend .flex-center, .gap-md, .border-base, .bg-dim, .transition-base;
+	padding: 0.75rem;
+
+	&:hover {
+		background-color: var(--c-border);
+	}
+}
+
+.pad-checkbox {
+	@extend .flex-shrink-0, .flex-center;
+
+	input[type='checkbox'] {
+		@extend .checkbox-custom;
+	}
+}
+
+.pad-info {
+	@extend .flex-1, .cursor-pointer;
+}
+
+.pad-description {
+	font-weight: 500;
+	color: var(--c-fg);
+	margin-bottom: 0.25rem;
+}
+
+.pad-meta {
+	@extend .flex, .text-sm, .text-placeholder;
+	gap: 1rem;
+}
+
+.pad-delete {
+	@extend .flex-shrink-0;
+}

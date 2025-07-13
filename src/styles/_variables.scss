@@ -1,0 +1,39 @@
+// CSS Custom Properties and Variables
+:root {
+	font-family: var(--ff-default);
+	line-height: 1.2;
+	font-weight: 400;
+	font-size: 16px;
+
+	color-scheme: light dark;
+	color: var(--c-fg);
+	background-color: var(--c-bg);
+
+	--c-fg: #000000;
+	--c-bg: #ffffff;
+	--c-dim-bg: #f0f0f0;
+	--c-border: #cccccc;
+	--c-placeholder: #888888;
+	--c-error: #c33131;
+	--c-success: #39c66d;
+	--c-danger: #e66363;
+	--rad: 6px;
+
+	--ff-default: Pretendard, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	--ff-mono:
+		SFMono-Regular, 'Jetbrains Mono', Menlo, Monaco, Consolas,
+		'Liberation Mono', 'Courier New', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--c-fg: #ffffff;
+		--c-bg: #000000;
+		--c-dim-bg: #111111;
+		--c-border: #333333;
+		--c-placeholder: #bbbbbb;
+		--c-error: #ef4444;
+		--c-success: #218546;
+		--c-danger: #8b1515;
+	}
+}

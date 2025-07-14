@@ -1,15 +1,21 @@
 // Main stylesheet - imports all other stylesheets
 
 // Base styles
-@import 'variables';
-@import 'utilities';
+@use 'variables' as *;
+@use 'utilities' as *;
 
 // Component styles
-@import 'components';
-@import 'forms';
-@import 'editor';
-@import 'navbar';
-@import 'modal';
-@import 'pads';
-@import 'preview';
-@import 'drag-drop';
+@use 'components' as *;
+@use 'forms' as *;
+@use 'editor' as *;
+@use 'navbar' as *;
+@use 'modal' as *;
+@use 'pads' as *;
+@use 'preview' as *;
+@use 'drag-drop' as *;
+
+// Other
+body {
+	margin: 0;
+	padding: 0;
+}

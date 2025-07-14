@@ -1,3 +1,6 @@
+@use 'utilities' as *;
+@use 'forms' as *;
+
 // Pad management styles
 .pads-list {
 	display: flex;

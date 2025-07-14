@@ -140,6 +140,16 @@ const EditorBody = (props: Props) => {
 			themeCompartment.of(getThemeExt()),
 			wrapModeCompartment.of(getWrapModeExt()),
 			indentCompartment.of(getIndentExt()),
+			EditorView.theme({
+				'&': {
+					fontFamily: 'var(--ff-mono), monospace',
+					fontSize: '16px',
+				},
+				'.cm-content': {
+					fontFamily: 'var(--ff-mono), monospace',
+					fontSize: '16px',
+				},
+			}),
 		];
 
 		const s = EditorState.create({

@@ -21,8 +21,9 @@
 
 	--ff-default: Pretendard, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	--ff-mono:
-		SFMono-Regular, 'Jetbrains Mono', Menlo, Monaco, Consolas,
-		'Liberation Mono', 'Courier New', monospace;
+		SFMono-Regular, 'Jetbrains Mono', 'Cascadia Code PL', 'Cascadia Code',
+		Menlo, 'Roboto Mono', Monaco, Consolas, 'Liberation Mono',
+		'Courier New', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
